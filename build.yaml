@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      assets_generate_builder:
+        enabled: true
+
+builders:
+  assets_generate_builder:
+    import: "package:assets_generate/assets_generate.dart"
+    builder_factories: ["build"]
+    build_extensions: { ".dart": [".assets.g.dart"] }
+    build_to: source
+    auto_apply: root_package

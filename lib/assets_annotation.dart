@@ -1,0 +1,3 @@
+class AssetsGenerate {
+  const AssetsGenerate();
+}

@@ -1,5 +1,6 @@
-## 资源文件路径生成
+# assets_generate_example
 
+## 资源文件路径生成
 
 ## Install
 
@@ -10,14 +11,16 @@ dev_dependencies:
   build_runner: ^1.10.0
   assets_generate:
     git:
-      url: https://github.com/OuyangMumu/assets_generate.git
+      url: https://gitlab.deepexi.top/deepexi/deepexi_devices/flu_packages.git
+      ref: dev
+      path: assets_generate
+
 ```
-
-
 
 ## DOC
 
 > 设置资源路径
+
 ```yaml
 flutter:
   assets:
@@ -49,7 +52,6 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 可以根据找个目录结构生成如下代码
 
 ![](md/2.png)
-
 
 `文件夹层次用驼峰命名发拼接`
 
@@ -84,5 +86,3 @@ class AssetsImages {
 
 
 ```
-
-
